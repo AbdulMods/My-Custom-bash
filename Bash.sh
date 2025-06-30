@@ -29,7 +29,7 @@ fi
 declare -A TOOLS
 TOOLS["refiner"]="Contacts-refine"
 TOOLS["pro-contacts"]="ForexContactsPro"
-
+TOOLS["update"]="My-Custom-bash"
 # TOOL INSTALL FUNCTION
 aq() {
 if [[ "$1" == "install" ]]; then
@@ -43,6 +43,11 @@ pro-contacts)
 pkg install curl -y 2>/dev/null || sudo apt install curl -y
 curl -sL https://raw.githubusercontent.com/AbdulMods/ForexContactsPro/main/installation.sh -o installation.sh
 bash installation.sh && rm installation.sh
+;;
+update)
+pkg install curl -y 2>/dev/null || sudo apt install curl -y
+curl -sL https://raw.githubusercontent.com/AbdulMods/My-Custom-bash/main/Bash.sh -o Bash.sh
+bash Bash.sh && rm Bash.sh
 ;;
 *)
 echo -e "${RED}✗ Unknown tool: $2${NC}"
@@ -85,7 +90,7 @@ echo -e "\033[1;96mInstalled Tools:\033[0m"
 declare -A TOOLS
 TOOLS["refiner"]="Contacts-refine"
 TOOLS["pro-contacts"]="ForexContactsPro"
-
+TOOLS["update"]="My-Custom-bash"
 aq() {
 if [[ "$1" == "install" ]]; then
 case "$2" in
@@ -98,6 +103,11 @@ pro-contacts)
 pkg install curl -y 2>/dev/null || sudo apt install curl -y
 curl -sL https://raw.githubusercontent.com/AbdulMods/ForexContactsPro/main/installation.sh -o installation.sh
 bash installation.sh && rm installation.sh
+;;
+update)
+pkg install curl -y 2>/dev/null || sudo apt install curl -y
+curl -sL https://raw.githubusercontent.com/AbdulMods/My-Custom-bash/main/Bash.sh -o Bash.sh
+bash Bash.sh && rm Bash.sh
 ;;
 *)
 echo -e "${RED}✗ Unknown tool: $2${NC}"
@@ -165,7 +175,7 @@ echo -e "\033[1;96mInstalled Tools:\033[0m"
 declare -A TOOLS
 TOOLS["refiner"]="Contacts-refine"
 TOOLS["pro-contacts"]="ForexContactsPro"
-
+TOOLS["update"]="My-Custom-bash"
 aq() {
 if [[ "$1" == "install" ]]; then
 case "$2" in
@@ -178,6 +188,11 @@ pro-contacts)
 pkg install curl -y 2>/dev/null || sudo apt install curl -y
 curl -sL https://raw.githubusercontent.com/AbdulMods/ForexContactsPro/main/installation.sh -o installation.sh
 bash installation.sh && rm installation.sh
+;;
+update)
+pkg install curl -y 2>/dev/null || sudo apt install curl -y
+curl -sL https://raw.githubusercontent.com/AbdulMods/My-Custom-bash/main/Bash.sh -o Bash.sh
+bash Bash.sh && rm Bash.sh
 ;;
 *)
 echo -e "${RED}✗ Unknown tool: $2${NC}"
@@ -238,6 +253,7 @@ EOL
 
         echo -e "${GREEN}✓ Termux terminal customized successfully!${NC}"
         echo -e "${YELLOW}⚠️ Restart Termux to see the new look${NC}"
+         exit
     else
         # Ubuntu customization
         echo -ne "\n${CYAN}Install custom terminal look? [${GREEN}Y${CYAN}/${RED}n${CYAN}]: ${NC}"
@@ -284,6 +300,7 @@ if [[ -z "$ACC_BANNER_SHOWN" ]]; then
 declare -A TOOLS
 TOOLS["refiner"]="Contacts-refine"
 TOOLS["pro-contacts"]="ForexContactsPro"
+TOOLS["update"]="My-Custom-bash"
 
 # TOOL INSTALL FUNCTION
 aq() {
@@ -298,6 +315,11 @@ pro-contacts)
 pkg install curl -y 2>/dev/null || sudo apt install curl -y
 curl -sL https://raw.githubusercontent.com/AbdulMods/ForexContactsPro/main/installation.sh -o installation.sh
 bash installation.sh && rm installation.sh
+;;
+update)
+pkg install curl -y 2>/dev/null || sudo apt install curl -y
+curl -sL https://raw.githubusercontent.com/AbdulMods/My-Custom-bash/main/Bash.sh -o Bash.sh
+bash Bash.sh && rm Bash.sh
 ;;
 *)
 echo -e "${RED}✗ Unknown tool: $2${NC}"
@@ -360,6 +382,7 @@ echo -e "\033[1;96mInstalled Tools:\033[0m"
 declare -A TOOLS
 TOOLS["refiner"]="Contacts-refine"
 TOOLS["pro-contacts"]="ForexContactsPro"
+TOOLS["update"]="My-Custom-bash"
 
 aq() {
 if [[ "$1" == "install" ]]; then
@@ -373,6 +396,11 @@ pro-contacts)
 pkg install curl -y 2>/dev/null || sudo apt install curl -y
 curl -sL https://raw.githubusercontent.com/AbdulMods/ForexContactsPro/main/installation.sh -o installation.sh
 bash installation.sh && rm installation.sh
+;;
+update)
+pkg install curl -y 2>/dev/null || sudo apt install curl -y
+curl -sL https://raw.githubusercontent.com/AbdulMods/My-Custom-bash/main/Bash.sh -o Bash.sh
+bash Bash.sh && rm Bash.sh
 ;;
 *)
 echo -e "${RED}✗ Unknown tool: $2${NC}"
