@@ -341,8 +341,8 @@ echo -e "    Run: \033[1;97m${tool}\033[0m"
 else
 echo -e "  \033[1;91m• ${tool} not installed\033[0m"
 echo -e "    Install: \033[1;97maq install ${tool}\033[0m"
-done
 fi
+done
 
 # ✅ MOTD FUNCTION
 # ──────────────────────────────────────────────────────────
