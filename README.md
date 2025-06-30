@@ -88,7 +88,7 @@ motd (Termux)	Replaces default MOTD	✅
 
 <p align="center">
   <a href="https://t.me/TradeWithQadeer">
-    <img src="https://img.shields.io/badge/Telegram-@Mt5ModsbyQadeer-blue?style=for-the-badge&logo=telegram">
+    <img src="https://img.shields.io/badge/Telegram-@TradeWithQadeer-blue?style=for-the-badge&logo=telegram">
   </a>
   <a href="mailto:aqbaloch6201@gmail.com">
     <img src="https://img.shields.io/badge/Email-Contact-red?style=for-the-badge&logo=gmail">
